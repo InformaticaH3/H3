@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="pt">
+<head>
+	<meta charset="UTF-8">
+	<title>Dados pessoais : Área pessoal : Tuga Resiste</title>
+	<meta name="author" content="h3 new hamburgology">
+	<meta name="description" content="">
+    <!-- Mobile -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+	<!-- CSS -->
+	<link href="css/styles.css" rel="stylesheet" type="text/css" charset="utf-8">
+	<link href="css/forms.css" rel="stylesheet" type="text/css" charset="utf-8">
+	<link href="css/account.css" rel="stylesheet" type="text/css" charset="utf-8">
+    <link href="css/intlTelInput.css" rel="stylesheet" type="text/css" charset="utf-8">
+	<!-- Fonts -->
+	<script src="https://use.typekit.net/woh3cie.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <!-- Scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/forms.js"></script>
+    <script src="js/forms-mask.js"></script>
+	<script src="js/password-validation.js"></script>
+	<script src="js/intlTelInput.js"></script>
+    <!-- Analytics -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-55402845-2', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+</head>
+<body>
+    <div class="bloco">
+        <div class="wrapper">
+			<div class="crumbs">
+				<h3><a href="index-login.html">TUGA RESISTE</a> / <a href="cliente.html">ÁREA PESSOAL</a></h3>
+			</div>
+            <h1>DADOS PESSOAIS</h1>
+            <h2></h2>
+			<p></p>
+		</div>
+	</div>
+    <form>
+        <div class="bloco">
+            <div class="wrapper">
+                <div class="form group">
+                    <ul>
+                        <li><img src="img/form-phone.svg" alt=""></li>
+                        <li>
+                            <h2>Número de cliente</h2>
+                            <p>O seu número de telemóvel é também o seu número de cliente. <b>Nunca lhe iremos telefonar.</b> Alterar o número de telemóvel requer nova autenticação.</p>
+                            <div class="form-element">
+                                <input id="number" name="Number" placeholder="Número de telemóvel" value="918472544" disabled>
+                            </div>
+							<div class="button-blue">
+								<a href="numero.html">Alterar número</a>
+							</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+	</form>
+	<form>
+        <div class="bloco grey">
+            <div class="wrapper">
+                <div class="form group">
+                    <ul>
+                        <li><img src="img/form-card.svg" alt=""></li>
+                        <li>
+							<h2>Cartão Tuga Resiste</h2>
+                           	<div class="cards-added">
+								<p><b>Cartões adicionados</b></p>
+								<p>Estes são os cartões que já estão adicionados à sua conta. Caso perca um deles pode sempre <a href="qr.html" target="_blank">imprimir</a> um novo, sem ter de ir às nossas lojas.</p>
+								<p>12-47512-98<br>09-79471-64</p>
+							</div>
+							<p><b>Adicionar cartão à conta</b></p>
+							<p>Caso tenha recebido um cartão numa das nossas lojas introduza o número que se encontra no seu rodapé para o adicionar à sua conta.</p>
+                            <div class="form-element">
+                                <label for="card">Número do cartão</label>
+                                <input class="card" name="Card" placeholder="Número do cartão" type="tel" required>
+                            </div>
+                            <!--
+                            <div class="form-alert">
+								<p><b>Número inválido.</b> Certifique-se que está correto.</p>
+                            </div>
+                            -->
+                            <!--
+                            <div class="form-alert">
+								<p><b>Cartão associado a outra conta.</b> Certifique-se que está correto. Se estiver, envie um email para <a href="mailto:tugaresiste@h3.com?subject=Cartão associado a outra conta">tugaresiste@h3.com</a> com o assunto "Cartão associado a outra conta", indicando, no corpo do email, o número do cartão Tuga Resiste em questão. O pedido será analisado internamente e uma resposta ser-lhe-á dada com a maior brevidade. Entretanto, pode continuar o processo de registo deixando este campo em branco.</p>
+                            </div>
+                            -->
+							<div class="form-fine_print">
+								<p>Ao adicionar um cartão à conta transfere os pontos adquiridos. Pode adicionar mais do que um cartão.</p>
+								<p>O seu cartão não tem número no rodapé?<br>Consulte a nossa página de <a href="policies/faq.html#NewCard" target="_blank">Perguntas Frequentes</a> para saber como proceder.</p>
+							</div>
+                            <button type="submit" class="button-blue">Adicionar cartão</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+	</form>
+    <form>
+        <div class="bloco">
+            <div class="wrapper">
+                <div class="form group">
+                    <ul>
+                        <li><img src="img/form-nif.svg" alt=""></li>
+                        <li>
+                            <h2>Dados de faturação</h2>
+                            <p>Dizemos o seu NIF por si. Introduza os seus dados de faturação para que a fatura na loja seja preenchida automaticamente. Uma chatice a menos.</p>
+                            <div class="form-element">
+                                <label for="NIF-Name">Nome</label>
+                                <input name="NIF-Name" placeholder="Nome" type="text">
+                            </div>
+                            <div class="form-element">
+                                <label for="NIF-Number">NIF</label>
+                                <input id="NIF-Number" name="NIF-Number" placeholder="NIF" type="tel" required>
+                            </div>
+                            <button type="submit" class="button-blue">Guardar</button>
+						</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+	</form>
+    <form>
+        <div class="bloco">
+            <div class="wrapper">
+                <div class="form group">
+                    <ul>
+                        <li><img src="img/form-payment.svg" alt=""></li>
+                        <li>
+                            <h2>Métodos de pagamento</h2>
+							<h3><b>MB WAY</b></h3>
+                            <p>Faça pagamentos com o seu telemóvel. É necessário instalar a app MB WAY no seu smartphone, registar-se com o mesmo número de telemóvel que utiliza no Tuga Resiste e permitir o envio de notificações.</p>
+                            <div class="form-element">
+								<input type="checkbox" id="mbway" name="mbway" checked>
+								<label for="mbway"><span></span><p>Utilizar MB WAY como método de pagamento.</p></label>
+                            </div>
+						</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+	</form>	<form>
+        <div class="bloco grey">
+            <div class="wrapper">
+                <div class="form group">
+                    <ul>
+                        <li><img src="img/form-personal_info.svg" alt=""></li>
+                        <li>
+                            <h2>Dados pessoais</h2>
+                            <p>Gostaríamos de conhecer quem gosta de nós. Do que gosta mais e do que gosta menos para melhor podermos adequar a nossa oferta.</p>
+                            <div class="form-element">
+                                <label for="Name">Nome</label>
+                                <input name="Name" placeholder="Nome" type="text">
+                            </div>
+                            <div class="form-element">
+                                <label for="DoB">Data de nascimento</label>
+                                <input id="DoB" name="DoB" placeholder="Data de nascimento" type="date" min="1900-01-01">
+                            </div>
+                            <div class="form-element">
+                                <label for="Gender">Género</label>
+                                <select name="Gender">
+                                	<option value="" selected disabled>Género...</option>
+                                    <option value="Feminino">Feminino</option>
+                                	<option value="Masculino">Masculino</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="button-blue">Guardar</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </form>
+	<form>
+        <div class="bloco">
+            <div class="wrapper">
+                <div class="form group">
+                    <ul>
+                        <li><img src="img/form-email.svg" alt=""></li>
+                        <li>
+                            <h2>Email</h2>
+							<p><b>Como método de recuperação de password</b><br>Em caso de perda de telefone e se se tiver esquecido da password e quiser receber uma nova via email (em vez de SMS), preencha o seguinte campo. Irá receber um email de confirmação.</p>
+                            <div class="form-element">
+                                <label for="Email">Email</label>
+                                <input name="Email" placeholder="Email" type="email" required>
+                            </div>
+                            <!--
+                            <div class="form-alert">
+								<p><b>O email ainda não foi confirmado.</b> Certifique-se que está correto. Consulte a sua conta de email ou peça o envio de um <a href="#">novo email de confirmação</a>.</p>
+                            </div>
+                            -->
+							<p><b>Notificações e newsletter via email</b><br>Enviamos o resumo das compras que fizer nas nossas lojas, alertamos quando superar desafios e, muito ocasionalmente, fazemos-lhe chegar uma newsletter com novidades, desafios e promoções exclusivas para si.</p>
+                            <div class="form-element">
+								<input type="checkbox" id="Purchases" name="Purchases" checked>
+								<label for="Purchases"><span></span><p>Resumos de compras e desafios superados.</p></label>
+								<input type="checkbox" id="Newsletter" name="Newsletter" checked>
+								<label for="Newsletter"><span></span><p>Newsletter H3.</p></label>
+                            </div>
+                            <button type="submit" class="button-blue">Guardar</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </form>
+	<form>
+        <div class="bloco grey">
+            <div class="wrapper">
+                <div class="form group">
+                    <ul>
+                        <li><img src="img/form-password.svg" alt=""></li>
+                        <li>
+                            <h2>Alterar password</h2>
+							<div id="password-info">
+								<p>A password tem de conter, pelo menos:</p>
+								<ul>
+									<li id="password-length" class="static"><p>8 caracteres;</p></li>
+									<li id="password-capital" class="static"><p>1 letra maiúscula;</p></li>
+									<li id="password-number" class="static"><p>1 número.</p></li>
+								</ul>
+							</div>
+                            <div class="form-element">
+                                <label for="Password">Password</label>
+                                <input id="password" type="password" name="Password" placeholder="Password" pattern="[A-Za-z0-9]{8,}" required>
+                            </div>
+                            <div class="form-element">
+                                <label for="Password-check">Confirmar password</label>
+                                <input id="password-check" type="password" name="Password-check" placeholder="Confirmar password" required>
+								<div id="password-check-img" class="static"></div>
+                            </div>
+                            <button type="submit" class="button-blue">Guardar</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+	</form>
+	<div class="bloco darkgrey">
+		<div class="wrapper">
+			<div class="form group">
+				<ul>
+					<li><img src="img/account-logout.svg" alt=""></li>
+					<li>
+						<h2>Logout</h2>
+						<p>Termine a sua sessão caso esteja a utilizar um dispositivo que não o seu.</p>
+						<div class="button-blue">
+							<a href="index.html">Logout</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+    <footer class="bloco center">
+    	<div class="wrapper">
+            <ul>
+                <p>Tuga Resiste & App H3 © 2014–<script>document.write(new Date().getFullYear());</script> H3 New Hamburgology</p>
+            </ul>
+        </div>
+    </footer>
+	<script>
+		$("#number").intlTelInput({
+			onlyCountries: ['pt'],
+			initialCountry: "pt",
+			separateDialCode: true
+		});
+		$('.card').formatter({
+			'pattern': '{{99}}-{{99999}}-{{99}}'
+		});
+		$('#NIF-Number').formatter({
+			'pattern': '{{999999999}}'
+		});
+    </script>
+</body>
+</html>

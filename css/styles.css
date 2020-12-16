@@ -1,0 +1,329 @@
+/* -
+
+MAIN
+
+- */
+
+
+
+html,
+body {
+	background-color: white;
+	font-family: "futura-pt",sans-serif;
+	font-size: 1em;
+	color: #333;
+	vertical-align: baseline;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div {
+	display: block;
+	overflow: visible;
+}
+
+img {
+	vertical-align: middle;
+}
+
+.group:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+	color: #1A9ED4;
+	border-bottom: 1px dotted #1A9ED4;
+}
+
+a:hover {
+	color: #333;
+	border-bottom: 1px dotted #333;
+}
+
+h1 {
+	font-size: 6.5em;
+	font-weight: 800;
+	line-height: .9em;
+	margin: 0;
+}
+
+h2 {
+	font-size: 4.1em;
+	font-weight: 600;
+	line-height: 1em;
+	margin: 0 0 40px 0;
+}
+
+h3 {
+	font-size: 2em;
+	font-weight: 400;
+	line-height: 1.2em;
+	margin: 10px 0 20px 0;
+}
+
+p,
+ol {
+	font-size: 1.4em;
+	font-weight: 400;
+	line-height: 1.5em;
+	margin: 0 0 20px 0;
+}
+
+ul {
+	list-style-type: none;
+	overflow: visible;
+	padding: 0;
+	margin: 0;
+}
+
+::selection {
+	background: #e5e5e5;
+}
+
+.center,
+.center h1,
+.center h2,
+.center h3,
+.center p {
+	text-align: center;
+}
+
+
+
+/* ------
+
+STRUCTURE
+
+------ */
+
+
+
+.bloco {
+	padding: 50px 0;
+}
+
+.wrapper {
+	width: 1000px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+
+
+/* -------------
+
+BACKGROUND COLOR
+
+------------- */
+
+
+
+.blue {
+	background-color: #1A9ED4;
+	color: white;
+}
+
+	.blue a,
+	.blue a:visited {
+		color: white;
+		border-bottom: 1px dotted white;
+	}
+
+	.blue a:hover {
+		color: #333;
+		border-bottom: 1px dotted #333;
+	}
+
+.grey {
+	background-color: #EFEFEF;
+}
+
+.darkgrey {
+	background-color: #333;
+	color: white;
+}
+
+
+
+/* ----
+
+BUTTONS
+
+---- */
+
+
+
+.button-white a,
+button.button-white,
+.button-white-transparent a,
+.button-blue a,
+button.button-blue,
+.button-blue-transparent a {
+	display: inline-block;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	border-radius: 5px;
+	padding: 5px 50px;
+	font-size: 1.4em;
+	font-weight: 400;
+	line-height: 1.5em;
+}
+
+.button-white a,
+button.button-white {
+	border: 1px solid white;
+	background: white;
+	color: #1A9ED4;
+	transition: background .1s linear, color .1s linear;
+}
+
+	.button-white a:hover,
+	button:hover.button-white {
+		background: none;
+		color: white;
+	}
+
+.button-white-transparent a {
+	border: 1px solid white;
+	background: none;
+	color: white;
+	transition: background .1s linear, color .1s linear;
+}
+
+	.button-white-transparent a:hover {
+		background: white;
+		color: #1A9ED4;
+	}
+
+.button-blue a,
+button.button-blue {
+	border: 1px solid #1A9ED4;
+	background: #1A9ED4;
+	color: white;
+	transition: border .1s linear, background .1s linear, color .1s linear;
+}
+
+	.button-blue a:hover,
+	button:hover.button-blue {
+		border: 1px solid #1A9ED4;
+		background: none;
+		color: #1A9ED4;
+	}
+
+.button-blue-transparent a {
+	border: 1px solid #1A9ED4;
+	background: none;
+	color: #1A9ED4;
+	transition: background .1s linear, color .1s linear;
+}
+
+	.button-blue-transparent a:hover {
+		background: #1A9ED4;
+		color: white;
+	}
+
+.buttons-two li {
+	float: left;
+	width: auto;
+	margin-right: 10px;
+}
+
+	.buttons-two li:last-child {
+		margin-right: 0;
+	}
+
+.crumbs a,
+.crumbs a:visited {
+	color: inherit;
+	border-bottom: 0;
+}
+
+.crumbs a:hover {
+	color: #1A9ED4;
+	border-bottom: 1px dotted #1A9ED4;
+}
+
+
+
+/* ---
+
+FOOTER
+
+--- */
+
+
+
+footer p {
+	font-size: 1em;
+	margin: 0;
+}
+
+
+
+/* ----------
+
+MEDIA QUERIES
+
+---------- */
+
+
+
+@media screen and (max-width:1200px) {
+
+
+
+	.wrapper {
+		width: 90%;
+	}
+
+
+
+}
+
+
+
+@media screen and (max-width:600px) {
+
+
+
+	html,
+	body {
+		font-size: .9em;
+	}
+
+	h1 {
+		font-size: 17vw;
+	}
+
+	h2 {
+		margin-bottom: 20px;
+	}
+
+
+
+	/* ------
+	
+	STRUCTURE
+	
+	------ */
+	
+	
+	
+	.bloco {
+		padding: 30px 0;
+	}
+
+
+
+}
